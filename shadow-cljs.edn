@@ -1,0 +1,18 @@
+{
+ :lein false
+ :source-paths ["src"]
+ :dependencies
+ []
+ :builds
+ {:lambda {:target :node-library
+           :output-to "./dist/lambda/index.js"
+           :exports {:handler main.lambda/handler}
+           :compiler-options {:infer-externs :auto}
+           }
+  :node {:target :node-script
+         :output-to "./dist/node/index.js"
+         :main main.lambda/start
+         :devtools {:after-load main.lambda/reload}}
+  :test {:target :node-test
+         :output-to "./build/test.js"}
+  }}

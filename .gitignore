@@ -1,0 +1,4 @@
+.shadow-cljs
+dist/
+node_modules/
+*.json

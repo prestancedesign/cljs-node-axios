@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "axios": "^0.20.0"
+  },
+  "devDependencies": {
+    "shadow-cljs": "^2.11.1",
+    "source-map-support": "^0.5.19",
+    "ws": "^7.3.1"
+  }
+}
